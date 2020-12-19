@@ -9,7 +9,7 @@ A simple plugin to read a string from Info.plist on iOS and strings.xml on Andro
 
 ## Installation
 
-- Current release
+Current release
 
 ```bash
 npm install capacitor-read-native-setting
@@ -26,11 +26,13 @@ npx cap sync ios
 
 After you install the plugin, locate your MainActivity.java (can be found in /android/app/src/main/java/path/to/my/app/MainActivity.java)
 
+Import the class and add
+
 ```java
-import this path:
+// import thhe class
 import com.ingageco.readnativesetting.CapacitorReadNativeSetting;
 
-add class inside bridge activity:
+// add class inside bridge activity:
 add(CapacitorReadNativeSetting.class);
 ```
 
