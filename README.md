@@ -10,25 +10,34 @@ A simple plugin to read a string from Info.plist on iOS and strings.xml on Andro
 ## Installation
 
 - Current release
-`npm install capacitor-read-native-setting`
+
+```bash
+npm install capacitor-read-native-setting
+```
 
 ## iOS
 
 Run:
+```bash
 npx cap sync ios
+```
 
-## Android (thanks @lbesiche)
+## Android
 
 After you install the plugin, locate your MainActivity.java (can be found in /android/app/src/main/java/path/to/my/app/MainActivity.java)
 
+```java
 import this path:
 import com.ingageco.readnativesetting.CapacitorReadNativeSetting;
 
 add class inside bridge activity:
 add(CapacitorReadNativeSetting.class);
+```
 
 Finally, run:
+```bash
 npx cap sync android
+```
 
 ## Importing the Plugin
 
