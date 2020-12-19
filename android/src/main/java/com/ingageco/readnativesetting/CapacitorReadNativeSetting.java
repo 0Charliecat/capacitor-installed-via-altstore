@@ -6,6 +6,9 @@ import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 
+import android.app.Activity;
+
+
 @NativePlugin
 public class CapacitorReadNativeSetting extends Plugin {
 
@@ -13,7 +16,11 @@ public class CapacitorReadNativeSetting extends Plugin {
     public void read(PluginCall call) {
         String key = call.getString("key");
 
-        int resId = getResources().getIdentifier(key, "string");
+        final Activity activity = getActivity();
+
+        String packageName = activity.getPackageName();
+
+        int resId = activity.getResources().getIdentifier(key, "string", packageName);
         String value = activity.getString(resId);
 
         JSObject ret = new JSObject();

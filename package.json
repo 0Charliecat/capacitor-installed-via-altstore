@@ -1,6 +1,6 @@
 {
   "name": "capacitor-read-native-setting",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple plugin to read from Info.plist on iOS and strings.xml on Android",
   "main": "dist/plugin.js",
   "module": "dist/esm/index.js",
