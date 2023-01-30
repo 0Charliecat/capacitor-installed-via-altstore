@@ -18,6 +18,3 @@ export class CapacitorReadNativeSettingWeb extends WebPlugin implements Capacito
 const CapacitorReadNativeSetting = new CapacitorReadNativeSettingWeb();
 
 export { CapacitorReadNativeSetting };
-
-import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(CapacitorReadNativeSetting);

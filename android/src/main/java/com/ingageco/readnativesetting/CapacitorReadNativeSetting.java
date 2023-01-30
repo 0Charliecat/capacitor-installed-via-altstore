@@ -1,7 +1,7 @@
 package com.ingageco.readnativesetting;
 
 import com.getcapacitor.JSObject;
-import com.getcapacitor.NativePlugin;
+import com.getcapacitor.annotation.CapacitorPlugin;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
@@ -9,7 +9,7 @@ import com.getcapacitor.PluginMethod;
 import android.app.Activity;
 
 
-@NativePlugin
+@CapacitorPlugin(name="CapacitorReadNativeSetting")
 public class CapacitorReadNativeSetting extends Plugin {
 
     @PluginMethod
@@ -25,6 +25,6 @@ public class CapacitorReadNativeSetting extends Plugin {
 
         JSObject ret = new JSObject();
         ret.put("value", value);
-        call.success(ret);
+        call.resolve(ret);
     }
 }
