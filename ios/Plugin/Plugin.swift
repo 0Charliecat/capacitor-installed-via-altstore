@@ -13,7 +13,7 @@ public class CapacitorReadNativeSetting: CAPPlugin {
 
         let value = Bundle.main.object(forInfoDictionaryKey: key) as? String
 
-        call.success([
+        call.resolve([
             "value": value
         ])
     }
