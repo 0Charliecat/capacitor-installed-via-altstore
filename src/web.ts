@@ -9,9 +9,9 @@ export class CapacitorReadNativeSettingWeb extends WebPlugin implements Capacito
     });
   }
 
-  async read(options: { key: string }): Promise<{ key: string }> {
-    console.log('VAL', options);
-    return options;
+  async read(args: { key: string }): Promise<any> {
+    console.log('ARGS', args);
+    return Promise.resolve();
   }
 }
 

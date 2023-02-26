@@ -1,3 +1,5 @@
 export interface CapacitorReadNativeSettingPlugin {
-  read(options: { key: string }): Promise<{ key: string }>;
+  read(args: { 
+    key: string 
+  }): Promise<any>;
 }
