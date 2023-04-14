@@ -2,6 +2,8 @@
 
 A simple plugin to know if Capacitor.js App was installed via AltStore
 
+It checks URL Types which begins with `altstore-`.
+
 ## Install
 
 ```bash
@@ -13,27 +15,21 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`isAltStoreInstallation()`](#isaltstoreinstallation)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### isAltStoreInstallation()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+isAltStoreInstallation() => Promise<{ isAltStored: boolean; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ isAltStored: boolean; }&gt;</code>
 
 --------------------
 
 </docgen-api>
-
-`isAltStored`

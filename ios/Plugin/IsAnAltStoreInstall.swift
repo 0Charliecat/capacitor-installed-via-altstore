@@ -1,15 +1,8 @@
 import Foundation
-import Capacitor
 
-/**
- * Please read the Capacitor iOS Plugin Development Guide
- * here: https://capacitorjs.com/docs/plugins/ios
- */
-@objc(IsAnAltStoreInstallPlugin)
-public class IsAnAltStoreInstallPlugin: CAPPlugin {
-    private let implementation = IsAnAltStoreInstall()
+@objc public class IsAnAltStoreInstall: NSObject {
     
-    @objc func isAltStoreInstallation(_ call: CAPPluginCall) {
+    @objc public func isAltStoreInstallation() -> Bool {
         let urlSchemePrefix = "altstore-" 
         var urlSchemeFound = false
         
@@ -29,8 +22,6 @@ public class IsAnAltStoreInstallPlugin: CAPPlugin {
             }
         }
         
-        call.resolve([
-            "isAltStored": urlSchemeFound
-        ])
+        return urlSchemeFound
     }
 }
