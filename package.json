@@ -1,5 +1,8 @@
 {
-  "name": "capacitor-installed-via-altstore",
+  "name": "@0charliecat/capacitor-installed-via-altstore",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "version": "1.0.0",
   "description": "A simple plugin to know if Capacitor.js App was installed via AltStore",
   "main": "dist/plugin.cjs.js",
