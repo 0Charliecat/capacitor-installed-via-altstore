@@ -13,6 +13,7 @@ public class IsAnAltStoreInstallPlugin extends Plugin {
 
     @PluginMethod
     public void isAltStoreInstallation(PluginCall call) {
+        JSObject ret = new JSObject();
         ret.put("isAltStored", false);
         call.resolve(ret);
     }
