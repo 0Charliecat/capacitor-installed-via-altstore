@@ -1,6 +1,6 @@
 {
-  "name": "capacitor-installed-via-altstore",
-  "version": "1.0.0",
+  "name": "@0charliecat/capacitor-installed-via-altstore",
+  "version": "1.5.0",
   "description": "A simple plugin to know if Capacitor.js App was installed via AltStore",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
